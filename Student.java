@@ -13,3 +13,12 @@ class Student {
         setCgpa(cgpa);
         setDob(dob);
     }
+    // Setter and Getter methods for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
