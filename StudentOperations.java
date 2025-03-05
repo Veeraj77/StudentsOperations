@@ -79,3 +79,20 @@ class StudentOperations {
         }
     }
 
+    public void deleteStudent() { // Delete student by PRN
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter PRN to delete: ");
+        long prn = Long.parseLong(scan.nextLine());
+
+        Iterator<Student> iterator = students.iterator();
+        while (iterator.hasNext()) {
+            Student student = iterator.next();
+            if (student.getPrn() == prn) {
+                iterator.remove();
+                System.out.println("Student with PRN " + prn + " deleted.");
+                return;
+            }
+        }
+        System.out.println("Student with PRN " + prn + " not found.");
+    }
+
