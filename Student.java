@@ -43,3 +43,13 @@ class Student {
     public int getAge() {
         return age;
     }
+
+    // Setter and Getter methods for CGPA
+    public void setCgpa(double cgpa) {
+        this.cgpa = cgpa;
+    }
+
+    public double getCgpa() {
+        return cgpa;
+    }
+    
