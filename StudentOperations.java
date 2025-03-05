@@ -27,3 +27,24 @@ class StudentOperations {
         System.out.println("Search by:\n1. PRN\n2. Name\n3. Position");
         int choice = Integer.parseInt(scan.nextLine());
 
+        switch (choice) {
+            case 1:
+                System.out.println("\nEnter PRN to search: ");
+                long prn = Long.parseLong(scan.nextLine());
+                searchByPrn(prn);
+                break;
+            case 2:
+                System.out.println("\nEnter Name to search: ");
+                String name = scan.nextLine();
+                searchByName(name);
+                break;
+            case 3:
+                System.out.println("\nEnter Position (Index) to search: ");
+                int pos = Integer.parseInt(scan.nextLine());
+                searchByPosition(pos);
+                break;
+            default:
+                System.out.println("\nInvalid choice!");
+        }
+    }
+
