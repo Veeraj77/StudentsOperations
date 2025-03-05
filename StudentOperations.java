@@ -96,3 +96,31 @@ class StudentOperations {
         System.out.println("Student with PRN " + prn + " not found.");
     }
 
+    public void editStudent() { // Edit student details by PRN
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter PRN of the student to edit: ");
+        long prn = Long.parseLong(scan.nextLine());
+
+        for (Student student : students) {
+            if (student.getPrn() == prn) {
+                System.out.println("Student Found. Enter new details:");
+
+                System.out.println("Enter New Name: ");
+                student.setName(scan.nextLine());
+
+                System.out.println("Enter New Age: ");
+                student.setAge(Integer.parseInt(scan.nextLine()));
+
+                System.out.println("Enter New CGPA: ");
+                student.setCgpa(Double.parseDouble(scan.nextLine()));
+                
+                System.out.println("Enter New Date of Birth (YYYY-MM-DD): ");
+                student.setDob(LocalDate.parse(scan.nextLine()));
+
+                System.out.println("Student details updated successfully!");
+                return;
+            }
+        }
+        System.out.println("Student with PRN " + prn + " not found.");
+    }
+}
