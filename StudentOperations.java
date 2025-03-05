@@ -22,3 +22,8 @@ class StudentOperations {
         }
     }
 
+    public void searchStudent() { // Method to search students
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Search by:\n1. PRN\n2. Name\n3. Position");
+        int choice = Integer.parseInt(scan.nextLine());
+
