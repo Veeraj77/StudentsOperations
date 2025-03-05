@@ -35,3 +35,11 @@ class Student {
         return prn;
     }
 
+    // Setter and Getter methods for Age
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
