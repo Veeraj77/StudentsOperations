@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+
+// Student class representing a student entity with attributes and methods
 class Student {
     private String name; // Student's name
     private long prn; // Student's PRN 
@@ -13,6 +16,7 @@ class Student {
         setCgpa(cgpa);
         setDob(dob);
     }
+
     // Setter and Getter methods for name
     public void setName(String name) {
         this.name = name;
@@ -20,5 +24,14 @@ class Student {
 
     public String getName() {
         return name;
+    }
+
+    // Setter and Getter methods for PRN
+    public void setPrn(long prn) {
+        this.prn = prn;
+    }
+
+    public long getPrn() {
+        return prn;
     }
 
