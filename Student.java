@@ -62,3 +62,12 @@ class Student {
         return dob;
     }
 
+    // Method to display student details
+    public void display() {
+        System.out.println("Name: " + getName() + 
+                           "\nPRN: " + getPrn() + 
+                           "\nAge: " + getAge() + 
+                           "\nCGPA: " + getCgpa() +
+                           "\nDate of Birth: " + getDob());
+    }
+}
