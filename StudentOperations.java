@@ -9,3 +9,8 @@ class StudentOperations {
         this.students = new ArrayList<>();
     }
 
+    public void addStudent(Student student) { // Adding Student
+        students.add(student);
+        System.out.println("Student Added");
+    }
+
