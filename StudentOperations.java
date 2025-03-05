@@ -70,3 +70,12 @@ class StudentOperations {
         System.out.println("Student with Name " + name + " not found.");
     }
 
+    public void searchByPosition(int pos) { // Search by Position
+        if (pos >= 0 && pos < students.size()) {
+            System.out.println("Student at Position " + pos + ":");
+            students.get(pos).display();
+        } else {
+            System.out.println("Invalid Position! No student exists at index " + pos);
+        }
+    }
+
