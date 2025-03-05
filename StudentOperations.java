@@ -48,3 +48,14 @@ class StudentOperations {
         }
     }
 
+    public void searchByPrn(long prn) { // Search by PRN
+        for (Student student : students) {
+            if (student.getPrn() == prn) {
+                System.out.println("\nStudent Found:");
+                student.display();
+                return;
+            }
+        }
+        System.out.println("\nStudent with PRN " + prn + " not found.");
+    }
+
