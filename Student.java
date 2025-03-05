@@ -53,3 +53,12 @@ class Student {
         return cgpa;
     }
     
+    // Setter and Getter methods for Date of Birth
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+    
+    public LocalDate getDob() {
+        return dob;
+    }
+
