@@ -4,3 +4,12 @@ class Student {
     private int age; // Student's age
     private double cgpa; // Student's CGPA 
     private LocalDate dob; // Student's Date of Birth
+
+    // Constructor to initialize a Student object with given attributes
+    public Student(String name, long prn, int age, double cgpa, LocalDate dob) {
+        setName(name);
+        setPrn(prn);
+        setAge(age);
+        setCgpa(cgpa);
+        setDob(dob);
+    }
