@@ -34,4 +34,3 @@ Display Methods: Show student information.
 
 Sorting Methods: Sort students based on marks.
 
-Total Marks Calculation: Calculate the total marks obtained by each student
